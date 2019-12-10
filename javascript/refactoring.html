@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title>연습중</title>
+    </head>
+    <body>
+        <h1>토글 버튼 연습중</h1><br>
+        <input type="button" value="dark" onclick="
+        document.querySelector( 'body' ).style.backgroundColor='black' ;document.querySelector( 'body' ).style.color='white' ;">
+        <input type="button" value="shine" onclick="
+        document.querySelector( 'body' ).style.backgroundColor='white' ;document.querySelector( 'body' ).style.color='black' ;">
+        <br><br><br>
+        <input id="night_day" type="button" value="dark" onclick="
+            if(document.querySelector( '#night_day' ).value === 'dark' ){    
+               document.querySelector( 'body' ).style.backgroundColor = 'black' ;document.querySelector( 'body' ).style.color = 'white' ;
+                document.querySelector( '#night_day' ).value = 'shine' ;      
+                } else {
+                document.querySelector( 'body' ).style.backgroundColor = 'white' ;document.querySelector( 'body' ).style.color = 'black' ;
+                document.querySelector( '#night_day' ).value = 'dark';
+                }
+        ">
+        <!--동일한 토글 효과를 주면, 첫번째 태그는 효과가 적용되지만 두번째꺼는 적용X
+        그러하므로,
+        document.querySelector( 'body' ) 이부분을 간단히, this로 표현해주면
+        토글 효과를 주고싶은 두 효과 모두 같은 효과를 적용할수 있다.
+        아래의 태그 처럼 변경해주면, 좀더 효율적이고 간편하게 적용이된다.
+        -->
+        <br><br><br>
+        <input type="button" value="dark" onclick="
+        if(this.value === 'dark' ){    
+           document.querySelector( 'body' ).style.backgroundColor = 'black' ;document.querySelector( 'body' ).style.color = 'white' ;
+             this.value = 'shine' ;      
+            } else {
+            document.querySelector( 'body' ).style.backgroundColor = 'white' ;document.querySelector( 'body' ).style.color = 'black' ;
+            this.value = 'dark';
+            }
+    ">
+    <!--
+        이번에는 document.querySelector('body') 부분의 중복을 없애보려면?
+        if위쪽에 var target = document.querySelector('body')
+        target이라는 A라는 매개 변수로 간단히 바꾸어 주면, 좀더 간략하게 코딩을 할수 있다.
+    -->
+    <br><br><br>
+        <input type="button" value="dark" onclick="
+         var target = document.querySelector('body');
+         if(this.value === 'dark' ){               
+           target.style.backgroundColor = 'black' ;
+           target.style.color = 'white' ;
+             this.value = 'shine' ;      
+            } else {
+            target.style.backgroundColor = 'white' ;
+            target.style.color = 'black' ;
+            this.value = 'dark';
+            }
+    ">
+    </body>
+</html>

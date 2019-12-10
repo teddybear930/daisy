@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JAVASCRIPT 연습</title>
+    </head>
+    <body>
+        <h1>loop & Array</h1>            
+        <h2>Co workers</h2>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
+<br><br><br>
+<!--중복되는부분을 간결히 하기 위해서 아래처럼 하면 된다.-->
+        <h1>loop & Array</h1>
+            <script>
+                var coworkers = ['A', 'B', 'C', 'D', 'E'];
+            </script>
+        <h2>Co workers</h2>
+        <ul>
+            <script>
+                var i = 0;
+                while(i < 4){
+                document.write('<li>' +coworkers[i]+ '</li>');
+                i = i + 1;
+                }
+            </script>
+        </ul>
+<br><br><br>
+<!--
+반복되는 원소가(데이터가) 바뀔경우, 자체적으로 반복 수를 파악되게 하려면?
+while 변수에 수치가 아닌 변수의 길이 coworkers.length를 입력해주면, 변수에 들어 있는 데이터 만큼 자체적으로 입력이된다.
+-->
+        <h1>loop & Array</h1>
+            <script>
+                 var coworkers = ['A', 'B', 'C', 'D', 'E'];
+            </script>
+        <h2>Co workers</h2>
+            <ul>
+                <script>
+                    var i = 0;
+                    while(i < coworkers.length){
+                    document.write('<li>' +coworkers[i]+ '</li>');
+                     i = i + 1;
+                     }
+                </script>
+<!--
+document.write('<li>' <a href="http://www.naver.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>'); 로 입력해주면, 링크 삽입이 된다. 
+-->
+            </ul>
+    </body>
+</html>
