@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>layout1</title>
+
+    <!--
+        div 대신,
+         head 부분에는 header란 태그가 생성
+         nav부분에도 nav란 태그가 생성
+         side부분에는 aside
+         contents부분에는 section
+         foot부분에는 footer 
+        다음과 같이 태그가 생성 되어, 일일이 div에 id를 부여하여 작업할 필요가 없어졌다.
+        과거 내역 참고는 layout1을 참고 . '
+        익스플로어 8에는 변경된 태그들이 반응을 하지 않는다'는 단점이 있다! 유의 하도록
+    -->
+    <style>
+        #wrap {width: 1000px; margin: 0 auto;}
+        header {width: 1000px; height: 100px; background: #111;}
+        nav {width: 1000px; height: 100px; background: #222;}
+        aside {float: left; width: 300px; height: 600px; background: #333;}
+        section {float: left; width: 700px; height: 600px; background: #444;}
+        footer {clear: both; width: 1000px; height: 100px; background: #555;}
+    </style>
+</html>
+<body>
+    <div id="wrap">
+        <header></header>
+        <nav></nav>
+        <aside></aside>
+        <section></section>
+        <footer></footer>
+    </div>
+</body>
