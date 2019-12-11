@@ -12,11 +12,29 @@
          if(this.value === 'dark' ){               
            target.style.backgroundColor = 'black' ;
            target.style.color = 'white' ;
-             this.value = 'shine' ;      
+             this.value = 'shine' ;  
+
+             var alist = document.querySelectorAll('a');
+             var i = 0;
+             while(i < alist.length){
+                 console.log(alist[i]);
+                 alist[i].style.color = 'powderblue';
+                 i = i + 1;
+             }
+
             } else {
             target.style.backgroundColor = 'white' ;
             target.style.color = 'black' ;
             this.value = 'dark';
+
+            var alist = document.querySelectorAll('a');
+             var i = 0;
+             while(i < alist.length){
+                 console.log(alist[i]);
+                 alist[i].style.color = 'green';
+                 i = i + 1;
+             }
+
             }
     ">
         <h2>javascript example</h2>
