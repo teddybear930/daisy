@@ -4,44 +4,7 @@
         <meta charset="utf-8">
         <title>연습중</title>
         <!--독립된 함수를 만들게 되면 this가 더이상 인풋버튼의 역할을 할수가 없고,dark개체를 가르키게 된다.-->
-        <script>
-        var Links = {
-            setColor:function(color){
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-                 alist[i].style.color = color;
-                 i = i + 1;
-                }
-            }
-        }
-        
-        var Body = {
-            setColor : function (color){
-                document.querySelector('body').style.color = color;
-            },
-            SetBackgroundColor : function (color){
-            document.querySelector('body').style.backgroundColor = color ;
-            }
-        }
-        function nightDayHandler(self){
-        var target = document.querySelector('body');
-         if(self.value === 'dark' ){               
-            Body.SetBackgroundColor('black') ;
-            Body.setColor('white');
-            self.value = 'shine' ;  
-
-            Links.setColor('powderblue');
-
-            } else {
-            Body.SetBackgroundColor('white') ;
-            Body.setColor('black');
-            self.value = 'dark';
-
-            Links.setColor('green');
-            }
-        }
-        </script>
+        <script src="colors.js"> </script>
     </head>
     <body>
         <h1>Button Example Index</h1><br>   
@@ -62,6 +25,8 @@
             <li><a href="./ex7.html">Function</a></li>
             <li><a href="./ex8.html">목차에서 중복코드 간략히 하기 전</a></li>
             <li><a href="./ex9.html">객체의 데이터를 순회하는 방법</a></li>
+            <li><a href="./colors.js">js코드 나누어 정리하기</a></li>
         </ol>
+        
     </body>
 </html>
