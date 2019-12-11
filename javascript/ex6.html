@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title>연습중</title>
+        <script>
+        function nightDayHandler(self){
+            var target = document.querySelector('body');
+            if(self.value === 'dark' ){               
+           target.style.backgroundColor = 'black' ;
+           target.style.color = 'white' ;
+             self.value = 'shine' ;  
+
+             var alist = document.querySelectorAll('a');
+             var i = 0;
+             while(i < alist.length){
+                 console.log(alist[i]);
+                 alist[i].style.color = 'powderblue';
+                 i = i + 1;
+             }
+
+            } else {
+            target.style.backgroundColor = 'white' ;
+            target.style.color = 'black' ;
+            self.value = 'dark';
+
+            var alist = document.querySelectorAll('a');
+             var i = 0;
+             while(i < alist.length){
+                 console.log(alist[i]);
+                 alist[i].style.color = 'green';
+                 i = i + 1;
+             }
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Button Example Index</h1><br>     
+    
+        <input type="button" value="dark" onclick="   
+        nightDayHandler(this);   ">
+
+        <input type="button" value="dark" onclick="   
+        nightDayHandler(this);    ">
+
+        <h2>javascript example</h2>
+        <ol>
+            <li><a href="./ex1.html">button</a></li>
+            <li><a href="./ex2.html">button background color</a></li>
+            <li><a href="./ex3.html">button true- false</a></li>
+            <li><a href="./button.html">button toggle</a></li>
+            <li><a href="./refactoring.html">button shortly</a></li>
+            <li><a href="./array.html">array</a></li>
+            <li><a href="./ex4.html">loop</a></li>
+            <li><a href="./ex5.html">loop & array</a></li>
+        </ol>
+    </body>
+</html>
