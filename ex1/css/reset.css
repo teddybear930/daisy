@@ -7,7 +7,7 @@ a:hover { color:#2698cb;}
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table { 
-    font-family: 'Gamja Flower', cursive; color:#222222; font-size:22px; line-height:1.5; 
+    font-family: 'Gamja Flower', cursive; color:#222222; font-size:12px; line-height:1.5; 
 }
 
 /* 폰트 스타일 초기화 */
