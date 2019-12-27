@@ -13,7 +13,7 @@
 .header .header_menu a:hover { color:#ccc;}
 .header .header_tit { text-align:center; text-transform: uppercase; margin-top: 55px; font-family: 'Gamja Flower';}
 .header .header_tit h1 {
-    font-size:50px; color: #fff; background: #51b0dc; display:inline-block;
+    font-size:35px; color: #fff; background: #51b0dc; display:inline-block;
     padding:5px 30px 5px 30px; letter-spacing: 2px; font-weight: 900;
     transition:box-shadow 0.25s ease-in-out;
 }
@@ -23,8 +23,12 @@
         inset 9em 0 0 0 #257fac;
 }
 .header .header_tit a {
-    font-size:16px; color:#fff; background-color: #4a9abf; display:inline-block;
-    padding:10px 20px 20px 20px; margin-top:-50px;
+    font-size:12px; 
+    color:#fff; 
+    background-color: #4a9abf; 
+    display:inline-block;
+    padding:10px 20px 20px 20px; 
+    margin-top:-50px;
     transition:box-shadow 0.25s ease-in-out;
 }
 .header .header_tit a:hover {
@@ -32,6 +36,49 @@
         0 0 0 5px rgba(75,154,191,0.9) inset,
         0 0 0 100px rgba(0,0,0,0.1) inset;
 }
+.header .header_icon { text-align:center; margin-top:40px; padding-bottom: 45px;}
+.header .header_icon li {display: inline; margin:0 2px;}
+.header .header_icon li a {
+    position: relative;
+    background-color: #3192bf; 
+    border-radius: 50%; 
+    width: 60px; height:60px; 
+    color:#fff; 
+    display:inline-block; 
+    font-size: 35px; 
+    line-height:60px;
+}
+.header .header_icon li a span {
+    position: absolute; 
+    left:50%; top: -40px; 
+    transform: translateX(-50%);
+    font-size: 10px; 
+    line-height: 1.2; 
+    background-color: #3192bf; 
+    padding: 3px 3px;
+    border-radius:6px 0;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+.header .header_icon li a span:before {
+    content: '';
+    position: absolute;
+    left: 50%; bottom: -5px;
+    margin-left:-5px;
+    border-top: 5px solid #3192bf;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.header .header_icon li a:hover span {
+    opacity: 1;
+    top: -33px;
+}
+.header .header_icon li a:hover {
+    box-shadow: 
+        0 0 0 3px rgba(75,154,191,0.9) inset,
+        0 0 0 100px rgba(0,0,0,0.1) inset;
+}
+
 
 
 /* box shadow 효과는 사이트 "webzz.tistory.com/420" 참고*/
