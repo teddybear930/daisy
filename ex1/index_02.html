@@ -2,6 +2,7 @@
 <html lang="ko-kr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
         <meta name="daisy" content="teddybear930">
         <meta name="description" content="반응형 사이트 따라하기">
         <meta name="keywords" content="반응형사이트, 웹퍼블리셔, 웹접근성, HTML5, webstorygirl, webs">
@@ -215,8 +216,27 @@
                             <!-- 게시판2 끝 -->
                         </article>
                         <article class="column col3">
-                            <h4 class="col_tit">Title</h4>
-                            <p class="col_desc">이 곳은 설명 부분 입니다.</p>
+                            <h4 class="col_tit">Image</h4>
+                            <p class="col_desc">이미지 고해상도 이미지 삽입<br>(블로그 영역)</p>
+                            <!-- Blog 1 시작 -->
+                            <div class="blog1">
+                                <h5 class="ir_su">image1</h5>
+                                <figure>
+                                    <img src="img/blog1_@1.jpg" class="img-normal" alt="normal image">
+                                    <img src="img/blog1_@2.jpg" class="img-retina" alt="retina image" width="100%">
+                                    <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 호환성으로는 아래 보다 좀 더 우수하고, 이는 CSS에서 미디어 쿼리를 적용하여 작업을 해주어야한다.</figcaption>
+                                </figure>
+                            </div>
+                            <!-- Blog 1 끝 -->
+                            <!-- Blog 2 시작 -->
+                            <div class="blog2">
+                                <h5 class="ir_su">image2</h5>
+                                <figure>
+                                    <img src="img/blog2_@1.jpg" srcset="img/blog2_@1.jpg 1x, img/blog2_@2.jpg 2x" class="img-normal" alt="normal image">
+                                    <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 호환성으로는 위보다 부족하고, 이는 백그라운드를 이용 하는 방법이다.</figcaption>
+                                </figure>
+                            </div>
+                            <!-- Blog 2 끝 -->
                         </article>         
                     </section>
                     <section id="cont_center">
