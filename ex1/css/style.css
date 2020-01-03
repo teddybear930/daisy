@@ -333,7 +333,7 @@ body {  }
 
 /*비디오 유튜브 영상 링크일 경우!*/
 .video {position: relative; width:100%; padding-bottom:56.25%; }
-.video iframe {position: absolute; width:100%; height:100%;}
+.video iframe {position: absolute; width:100%, hei}
 
 
 
