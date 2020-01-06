@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko-kr">
+<html lang="ko">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
@@ -13,6 +13,7 @@
             <link rel="stylesheet" href="../ex1/css/style.css?v=4">
             <link rel="stylesheet" href="../ex1/css/font-awesome.css?v=1">
             <link rel="stylesheet" href="../ex1/css/slick.css?v=1">
+            <link rel="stylesheet" href="../ex1/css/lightgallery.css">
 
         <!-- Facebook meta tags -->
         <meta property="og:type" content="article" />
@@ -222,19 +223,26 @@
                             <div class="blog1">
                                 <h5 class="ir_su">image1</h5>
                                 <figure>
-                                    <img src="img/blog1_@1.jpg" class="img-normal" alt="normal image">
-                                    <img src="img/blog1_@2.jpg" class="img-retina" alt="retina image" width="100%">
+                                    <!--<img src="img/blog1_@1.jpg" class="img-normal" alt="normal image">
+                                    <img src="img/blog1_@2.jpg" class="img-retina" alt="retina image" width="100%">-->
+                                    <img src="img/blog3_@1.jpg" srcset="img/blog3_@1.jpg 1x, img/blog3_@2.jpg 2x, img/blog3_@3.jpg 3x" alt="이미지">
                                     <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 호환성으로는 아래 보다 좀 더 우수하고, 이는 CSS에서 미디어 쿼리를 적용하여 작업을 해주어야한다.</figcaption>
                                 </figure>
                             </div>
                             <!-- Blog 1 끝 -->
                             <!-- Blog 2 시작 -->
-                            <div class="blog2">
+                            <div class="blog2 mt15">
                                 <h5 class="ir_su">image2</h5>
                                 <figure>
                                     <img src="img/blog2_@1.jpg" srcset="img/blog2_@1.jpg 1x, img/blog2_@2.jpg 2x" class="img-normal" alt="normal image">
                                     <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 호환성으로는 위보다 부족하고, 이는 백그라운드를 이용 하는 방법이다.</figcaption>
                                 </figure>
+                            </div>
+                            <div class="blog2 mt15">
+                                <div class="img-retina">
+                                    <h5>image2</h5>
+                                </div>
+                                <p>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 호환성으로는 위보다 부족하고, 이는 백그라운드를 이용 하는 방법이다.</p>
                             </div>
                             <!-- Blog 2 끝 -->
                         </article>         
@@ -242,55 +250,200 @@
                     <section id="cont_center">
                         <h3 class="ir_su">반응형 사이트 가운데 컨텐츠</h3>
                         <article class="column col4">
-                            <h4 class="col_tit">Title</h4>
-                            <p class="col_desc">이 곳은 설명 부분 입니다.</p>
+                            <h4 class="col_tit">Slick Slider</h4>
+                            <p class="col_desc">Slick.JS 를 이용한 이미지 슬라이드 효과입니다.</p>
+                            <!-- 이미지 슬라이드 시작 -->
+                            <div class="slider">
+                                <div>
+                                    <figure>
+                                        <img src="img/slider01.jpg" alt="이미지1">
+                                        <figcaption><em>Responsive Site1</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span></figcaption>
+                                    </figure>
+                                </div>
+                                <div>
+                                    <figure>
+                                        <img src="img/slider02.jpg" alt="이미지2">
+                                        <figcaption><em>Responsive Site2</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span></figcaption>
+                                    </figure>
+                                </div>
+                                <div>
+                                    <figure>
+                                        <img src="img/slider03.jpg" alt="이미지3">
+                                        <figcaption><em>Responsive Site3</em><span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드 입니다.</span></figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- 이미지 슬라이드 끝-->
                         </article>
                         <article class="column col5">
-                            <h4 class="col_tit">Title</h4>
-                            <p class="col_desc">이 곳은 설명 부분 입니다.</p>
+                            <h4 class="col_tit">Blend Effect</h4>
+                            <p class="col_desc">Background-blend-mode와 mix-blend-mode</p>
+                            <!--  light box  시작-->
+                            <div class="lightbox square clearfix">
+                                <a href="img/light01_s.jpg"><img src="img/light01.jpg" alt="이미지"><em>blur</em></a>
+                                <a href="img/light02_s.jpg"><img src="img/light02.jpg" alt="이미지"><em>brightness</em></a>
+                                <a href="img/light03_s.jpg"><img src="img/light03.jpg" alt="이미지"><em>contrast</em></a>
+                                <a href="img/light04_s.jpg"><img src="img/light04.jpg" alt="이미지"><em>grayscale</em></a>
+                                <a href="img/light05_s.jpg"><img src="img/light05.jpg" alt="이미지"><em>hur-rotate</em></a>
+                                <a href="img/light06_s.jpg"><img src="img/light06.jpg" alt="이미지"><em>invert</em></a>
+                                <a href="img/light07_s.jpg"><img src="img/light07.jpg" alt="이미지"><em>opacity</em></a>
+                                <a href="img/light08_s.jpg"><img src="img/light08.jpg" alt="이미지"><em>saturate</em></a>
+                                <a href="img/light09_s.jpg"><img src="img/light09.jpg" alt="이미지"><em>sepia</em></a>
+                                <a href="img/light10_s.jpg"><img src="img/light10.jpg" alt="이미지"><em>Mix</em></a>
+                            </div>
+                            <!--  light box 끝 -->
                         </article>
                         <article class="column col6">
-                            <h4 class="col_tit">Title</h4>
-                            <p class="col_desc">이 곳은 설명 부분 입니다.</p>
+                            <h4 class="col_tit">Video</h4>
+                            <p class="col_desc">반응형 영상을 보여주는 영역입니다.</p>
+                            <!-- Video 시작  -->
+                                <!--파일이 있는경우
+                                <video autoplay="autoplay" controls="controls" loop="loop">
+                                    <source src="img/video.mp4" type="video/mp4">
+                                </video>-->
+                                <iframe src="https://www.youtube.com/embed/1S7LlVy-ugk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <!--  Video 끝 -->
                         </article>
                     </section>
                     <section id="cont_right">
                         <h3 class="ir_su">반응형 사이트 오른쪽 컨텐츠</h3>
                         <article class="column col7">
-                            <h4 class="col_tit">Title</h4>
-                            <p class="col_desc">이 곳은 설명 부분 입니다.</p>
+                            <h4 class="col_tit">Effect1</h4>
+                            <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
+                            <!-- side1 시작  -->
+                            <div class="side1">
+                                <figure class="front">
+                                    <img src="img/side1.jpg" alt="이미지1">
+                                </figure>
+                                <div class="back">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <!--  side1 끝-->
                         </article>
                         <article class="column col8">
-                            <h4 class="col_tit">Title</h4>
-                            <p class="col_desc">이 곳은 설명 부분 입니다.</p>
+                        <h4 class="col_tit">Effect2</h4>
+                            <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
+                            <!-- side2 시작  -->
+                            <div class="side2">
+                                <figure class="front">
+                                    <img src="img/side2.jpg" alt="이미지2">
+                                    <figcaption><h3>Hover Effect</h3></figcaption>
+                                    </figure>
+                                </figure>
+                                <figure class="back">
+                                    <img src="img/side4.jpg" alt="이미지2">
+                                    <figcaption><h3>Hover Effect</h3></figcaption>
+                                </figure>
+                            </div>
+                            <!-- side2 끝-->
                         </article>
                         <article class="column col9">
-                            <h4 class="col_tit">Title</h4>
-                            <p class="col_desc">이 곳은 설명 부분 입니다.</p>
+                            <h4 class="col_tit">Effect3</h4>
+                            <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
+                            <!-- side3 시작  -->
+                            <div class="side3">
+                                <figure>
+                                    <img src="img/side3.jpg" alt="이미지3">
+                                    <figcaption>
+                                        <h3>Hover<em>Effect</em></h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <!--side3 끝-->
                         </article>
                     </section>
                 </div>
             </section>
-        <!--contents//-->
+        <!--contents 끝-->
         </main>
 
         <footer id="footer">
             <div class="container">
-                <h2>반응형 사이트 푸터</h2>
+                <div class="row">
+                    <div class="footer">
+                        <ul>
+                            <li><a href="#">사이트 도움말</a></li>
+                            <li><a href="#">사이트 이용약관</a></li>
+                            <li><a href="#">사이트 운영원칙</a></li>
+                            <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                            <li><a href="#">책임의 한계와 법적고지</a></li>
+                            <li><a href="#">게시중단요청서비스</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                        <address>
+                            Copyright ©
+                            <a href="http://webstoryboy.co.kr"><strong>webstoryboy</strong></a>
+                            All Rights Reserved.
+                        </address>
+                    </div>
+                </div>
             </div>
         </footer>
-        <!--footer//-->
+       
 
 
 
         <!-- JavaScript.Libraries -->
         <script src="js/jquery.min_1.12.4.js"></script>
         <script src="js/modernizr-custom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/lightgallery.min.js"></script>
         <script>
+            //접기,펼치기
+            $(".btn").click(function(e){
+                e.preventDefault();
+                $(".nav").slideToggle();
+                $(".btn").toggleClass("open");
+
+                if($(".btn").hasClass("open")){
+                    //open이라는 class가 있을때
+                    $(".btn").find("i").attr("class","fa fa-angle-up");
+                } else {
+                    //open이라는 class가 없을때
+                    $(".btn").find("i").attr("class","fa fa-angle-down");
+                }
+            });
+
+            $(window).resize(function(){
+                var wWidth = $(window).width();
+                if (wWidth > 600) {
+                    $(".nav").removeAttr("style");
+                }
+            });
+
+
+            //라이트 박스
+            $(".lightbox").lightGallery({
+                autoplay: true,
+                pause: 3000,
+                progressBar: true
+            });
+
+            //이미지 슬라이더
+                $(".slider").slick({
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    arrows: true,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                arrows: true,
+                                dots: false                                
+                            }
+                        }
+                    ]
+                });
+                <!--autoplay: false-->
+            
             //http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
             //http://twitter.com/intent/tweet?text={페이지 제목}&url={페이지링크}
             //https://share.naver.com/web/shareView.nhn?url={페이지링크}&title={페이지 제목}
             //https://plus.google.com/share?url={페이지링크}&t={페이지 제목}
+
+            //SNS 공유하기
             $(".facebook").click(function(e){
                 e.preventDefault();
                 window.open('https://www.facebook.com/sharer/sharer.php?u=' +encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=300, width=600'); 
