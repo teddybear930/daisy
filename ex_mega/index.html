@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"> 
+        <title>연습중2</title>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script>
+            $("document").ready(function(){
+                //alert("test");
+                $(".topmenu>ul>li").hover(function(){
+                var $num = $(".topmenu>ul>li").index(this);
+                $(".topmenu>ul>li").css({"color":""});
+                $(".topmenu>ul>li:eq("+$num+")").css({"color":"red"});
+                $(this).find("ul").stop().slideToggle(300);
+                });
+                //팝업창
+                $(".popup").draggable();
+                $(".btn").click(function(){
+                    $(".popup").fadeOut(); 
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+    <!-- 팝업창 -->    
+        <div class="popup">
+            <img src="http://www.deplay.co.kr/data/geditor/1508/2106401741_ef72ba5d_popup0151.jpg">
+            <br>
+            <input type="button" value="창닫기" class="btn">
+            </div>    
+    <!-- 팝업창 -->  
+        <div class="topmenu">
+            <ul>
+                <li class="menu1">쇼핑몰 제작
+                <ul class="somenu">
+                    <li>프리미엄 제작</li>    
+                    <li>창업무료지원</li>    
+                    <li>디자인 마켓</li>    
+                </ul>                
+                <li class="menu2">모바일 제작
+                    <ul class="somenu">
+                        <li>모바일샵 4.0</li>    
+                        <li>이지팩</li>    
+                        <li>APP 특화</li>    
+                    </ul>
+                </li>    
+                <li class="menu3">운영기능</li>    
+                <li class="menu4">쇼핑분석</li>    
+                <li class="menu5">컨설팅</li>    
+                <li class="menu6">고객센터
+                    <ul class="somenu">
+                        <li>FAQ</li>    
+                        <li>1:1문의</li>    
+                        <li>찾아오시는길</li>    
+                    </ul>
+                </li>    
+            </ul>
+        </div>
+    </body>
+</html>
