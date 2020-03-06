@@ -28,7 +28,10 @@
 #container .content:nth-of-type(2){transition-delay: .3s;}
 #container .content:nth-of-type(3){transition-delay: .6s;}
 #container .content:nth-of-type(4){transition-delay: .8s;}
+
 #container.start .content{top:0;}
+.pargrph_tit{margin-bottom:50px; font-size:24px; color:#fff; position: relative;}
+.pargrph_tit:after{content:""; display: block; width:30px; height:8px; background:#0b0164; position: absolute; left:0; bottom:-10px;}
 
 #container .content.this:before, #container .content.this:after, #container .content.this .conbox:before, #container .content.prev:before, #container .content.prev:after, #container .content.prev .conbox:before, #container .content.next:before, #container .content.next:after, #container .content.next .conbox:before{opacity: 0; transition:all .6s; transition-delay: 3s;}
 #container .content.this .conbox:before{transform:translate3d(300px, 0, 0);}
