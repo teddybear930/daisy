@@ -4,18 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+        <!-- 전화, 주소, 이메일 자동 링크 없앨때-->
         <meta name="format-detection" content="telephone=no, address=no, email=no" />
+        <!--기본 포멧 삭제-->
+        <!--<meta name="format-detection" content="no" />-->
         <meta name="title" property="og:title" content="minError">
         <meta name="images" property="og:img" content="link">
         <meta name="description" property="og:description" content="minError">
+        <meta name="type" property="og:type" content="article">
 
         <!-- style -->
-            <link rel="stylesheet" href="../CSS/reset.c">
-            <link rel="stylesheet" href="./css/ui.css?v=1">
+            <link rel="stylesheet" href="./css/reset.css">
+            <link rel="stylesheet" href="./css/ui.css">
 
         <title>minError</title>
     </head>
-
     <body>
         <section id="wrap">
             <h1>minError</h1>
@@ -23,18 +26,32 @@
                     <strong class="logo_box"><img src="./img/minError-100px.jpg" alt="minError"></strong>
                     <nav>
                         <ul>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">능력치</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li data-rol="menu1"><a href="#">About Me</a></li>
+                            <li data-rol="menu2"><a href="#">능력치</a></li>
+                            <li data-rol="menu3"><a href="#">포트폴리오</a></li>
+                            <li data-rol="menu4"><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </header>
                 <section id="container">
-                    <section id="menu1" class="content">a</section>
-                    <section id="menu2" class="content">a</section>
-                    <section id="menu3" class="content">a</section>
-                    <section id="menu4" class="content">a</section>
+                    <section id="menu1" class="content">
+                        <h2>About Me</h2>
+                        <div class="conbox">
+                            <section class="content_wrap"></section>
+                        </div>
+                    </section>
+                    <section id="menu2" class="content">
+                        <h2>능력치</h2>
+                        <div class="conbox"></div>
+                    </section>
+                    <section id="menu3" class="content">
+                        <h2>포트폴리오</h2>
+                        <div class="conbox"></div>
+                    </section>
+                    <section id="menu4" class="content">
+                        <h2>Contact</h2>
+                        <div class="conbox"></div>
+                    </section>
                 </section>
                 <footer>
                     <address>(00000)<br>서울특별시 동대문구 용두동 103-23 <br>TEL. 010-7666-2206</address>
@@ -44,5 +61,7 @@
                     <a href="https://www.instagram.com" class="insta" title="instagram으로 이동"></a>
                 </footer>
         </section>
+        <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="./js/ui.js"></script>
     </body>
 </html>
